@@ -1,0 +1,300 @@
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background-color: white;
+
+  .imageNcontent {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    .modal-image {
+      width: auto;
+      height: auto;
+      max-height: 70vh;
+      display: block;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  button {
+    background: transparent;
+    position: absolute;
+    border: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    i {
+      width: 25px;
+      height: 25px;
+      border: solid #3f3f3f;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+
+    .right {
+      -ms-transform: rotate(-45deg);
+
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    .left {
+      -ms-transform: rotate(135deg);
+
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+  }
+
+  button:focus {
+    outline-width: 0;
+  }
+  .leftButton {
+    left: 0;
+  }
+  .rightButton {
+    right: 0;
+  }
+}
+
+#caption {
+  text-align: center;
+  color: #3f3f3f;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #3f3f3f;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  height: 80vh;
+
+  .contentWrapper {
+    min-height: 80vh;
+
+    .artistContent {
+      width: 40%;
+      display: inline-block;
+      vertical-align: top;
+      text-align: justify;
+      white-space: break-spaces;
+
+      h1 {
+        display: inline-block;
+        font-size: 40px;
+      }
+
+      h2 {
+        color: rgb(73, 73, 73);
+        font-size: 18px;
+        font-weight: 600;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover {
+          color: rgb(0, 0, 0);
+          -webkit-transition: 0.5s;
+          -o-transition: 0.5s;
+          transition: 0.5s;
+        }
+      }
+      
+      h3 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.4;
+      }
+    }
+
+    .mainPicture {
+      height: auto;
+      width: 55%;
+      display: inline-block;
+      margin-left: 3%;
+      margin-top: 3%;
+      text-align: center;
+
+      h2 {
+        display: none;
+        text-align: center;
+      }
+
+      img {
+        width: auto;
+        height: auto;
+        max-height: 60vh;
+        max-width: 99%;
+        display: block;
+        margin: auto;
+      }
+      div {
+        a {
+          text-decoration: none;
+          color: black;
+          display: block;
+        }
+      }
+    }
+  }
+
+  #photos {
+    section {
+      line-height: 0;
+      margin-bottom: 40px;
+      img {
+        cursor: -webkit-zoom-in;
+        cursor: zoom-in;
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 20px;
+        position: relative;
+      }
+    }
+
+    .photos {
+      -webkit-column-count: 3;
+      -webkit-column-gap: 20px;
+      -moz-column-count: 3;
+      -moz-column-gap: 20px;
+      column-count: 3;
+      column-gap: 20px;
+    }
+
+    .fewPictures {
+      -webkit-column-count: 2;
+      -webkit-column-gap: 50px;
+      -moz-column-count: 2;
+      -moz-column-gap: 50px;
+      column-count: 2;
+      column-gap: 50px;
+      width: 50%;
+      margin-left: 25%;
+    }
+
+    .oneColumnPictures {
+      -webkit-column-count: 1;
+      -webkit-column-gap: 20px;
+      -moz-column-count: 1;
+      -moz-column-gap: 20px;
+      column-count: 1;
+      column-gap: 20px;
+      width: 50%;
+      margin-left: 25%;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .modal {
+    .imageNcontent > .modal-image {
+      max-height: 60vh;
+      max-width: 250px;
+    }
+    button {
+      i {
+        width: 25px;
+        height: 25px;
+        padding: 2px;
+      }
+    }
+  }
+
+  .wrapper {
+    .allPictures ul {
+      display: block;
+      li {
+        margin: 0;
+        height: auto;
+        margin: 40px;
+        margin-left: 0;
+        img {
+          width: 100%;
+          max-height: none;
+        }
+      }
+    }
+
+    .contentWrapper {
+      display: -webkit-box;
+
+      display: -ms-flexbox;
+
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+
+      .artistContent {
+        display: block;
+        width: 100%;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+
+        h1 {
+          visibility: hidden;
+        }
+      }
+
+      .mainPicture {
+        width: 100%;
+        display: block;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+
+        h2 {
+          display: block;
+        }
+
+        img {
+          max-height: 70vh;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    #photos {
+      margin-bottom: 50px;
+    }
+  }
+}

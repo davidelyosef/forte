@@ -1,0 +1,157 @@
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background-color: white;
+
+  .imageNcontent {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .modal-image {
+      width: auto;
+      height: auto;
+      max-height: 70vh;
+      display: block;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  button {
+    background: transparent;
+    position: absolute;
+    border: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: 20px;
+
+    i {
+      width: 25px;
+      height: 25px;
+      border: solid #3f3f3f;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+
+    .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    .left {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+  }
+
+  button:focus {
+    outline-width: 0;
+  }
+  .leftButton {
+    left: 0;
+  }
+  .rightButton {
+    right: 0;
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #3f3f3f;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  .eventDetails {
+    height: 90vh;
+    margin: auto;
+    text-align: center;
+    display: block;
+    position: relative;
+    .text {
+      position: absolute;
+      top: 0;
+      width: 25%;
+      h4 {
+        text-align: left;
+      }
+      h5 {
+        text-align: justify;
+      }
+    }
+
+    img {
+      max-height: 80vh;
+      max-width: 100%;
+      display: block;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+  }
+
+  .allPictures {
+    text-align: center;
+    display: inline-block;
+
+    img {
+      display: inline-block;
+      height: auto;
+      max-height: 40vh;
+      width: auto;
+      max-width: 100%;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .modal {
+    .imageNcontent > .modal-image {
+      max-height: 60vh;
+      max-width: 250px;
+    }
+    button {
+      i {
+        width: 25px;
+        height: 25px;
+        padding: 2px;
+      }
+    }
+  }
+  .wrapper {
+    .eventDetails {
+      .text {
+        position: static;
+        width: auto;
+      }
+    }
+
+    .allPictures {
+      img {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}

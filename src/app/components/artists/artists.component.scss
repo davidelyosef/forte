@@ -1,0 +1,165 @@
+div {
+  font-weight: 400;
+  font-style: normal;
+
+  h4 {
+    margin-top: 3vh;
+    font-weight: bold;
+    margin-bottom: 2vh;
+  }
+  #firstPart {
+    min-height: 80vh;
+    .artistContent {
+      display: inline-block;
+      width: 50%;
+
+      div {
+        display: inline-block;
+        width: auto;
+        vertical-align: top;
+        width: 50%;
+
+        div {
+          display: block;
+          width: auto;
+
+          .artistsTitles {
+            font-weight: bold;
+          }
+
+          section {
+            display: none;
+          }
+
+          .artistsNames {
+            font-weight: 400;
+
+            a {
+              text-decoration: none;
+              color: black;
+            }
+          }
+
+          h5:hover {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .hoverPicture {
+      display: inline-block;
+      width: 45%;
+      position: sticky;
+      top: 10vh;
+
+      img {
+        vertical-align: top;
+        position: relative;
+        max-height: 60vh;
+        max-width: 99%;
+        display: inline-block;
+        left: 60%;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+
+  .allArtists {
+    margin-top: 40px;
+    text-align: center;
+    section {
+      display: inline-block;
+      img {
+        width: 200px;
+        margin: 10px;
+        margin-bottom: 0;
+      }
+
+      .imageLink {
+        display: block;
+
+        -webkit-opacity: 0.9;
+        opacity: 0.9;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        &:hover {
+          -webkit-opacity: 1;
+          opacity: 1;
+          -webkit-transition: 0.5s;
+          -o-transition: 0.5s;
+          transition: 0.5s;
+        }
+
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      .link {
+        border-bottom: 1px solid rgb(189, 189, 189);
+        color: grey;
+        text-decoration: none;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 905px) {
+  div {
+    .artistContent {
+      width: 50%;
+      .works {
+        div {
+          position: absolute;
+          right: 7.5%;
+        }
+      }
+    }
+
+    div {
+      .hoverPicture {
+        img {
+          display: none;
+          visibility: hidden;
+        }
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+// telephone
+@media only screen and (max-width: 500px) {
+  div {
+    #firstPart {
+      display: none;
+    }
+    .allArtists {
+      margin-top: 10px;
+      section {
+        .imageLink {
+          display: block;
+          opacity: 1;
+
+          img {
+            width: 250px;
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 906px){
+  #firstPart{
+    display:none;
+  }
+}

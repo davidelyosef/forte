@@ -1,0 +1,77 @@
+.header {
+  position: fixed;
+  background-color: #fff;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.header > a img {
+  height: 4vh;
+}
+.header .header-right {
+  float: right;
+}
+.header .header-right a {
+  font-weight: 400;
+  font-style: normal;
+  color: grey;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.header .header-right a:hover {
+  color: #000;
+}
+.header .header-right .admin {
+  color: orange;
+  font-weight: 700;
+}
+.header .header-right .current-link {
+  color: #000;
+  font-weight: 700;
+}
+.header #toggle {
+  display: none;
+  z-index: 999;
+  width: 30px;
+  height: 40px;
+  float: right;
+}
+.header #toggle .span {
+  height: 4px;
+  background: #000;
+  margin: 3px auto;
+}
+.header .menuDropDown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: -1;
+}
+.header .menuDropDown a {
+  display: block;
+  color: grey;
+  margin: 15px;
+  margin-top: 40px;
+}
+.header .menuDropDown .current-link {
+    color: #000;
+    font-weight: 700;
+}
+@media only screen and (max-width: 689px) {
+  .header #toggle {
+    display: inline-block;
+  }
+  .header .header-right {
+    display: none;
+  }
+}

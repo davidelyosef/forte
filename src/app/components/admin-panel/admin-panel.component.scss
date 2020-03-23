@@ -1,0 +1,234 @@
+.wrapper {
+  .btn-dark {
+    width: auto;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    color: grey;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    display: inline-block;
+    cursor: pointer;
+    &:hover {
+      color: black;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+    }
+  }
+
+  div {
+    margin-bottom: 15px;
+  }
+
+  .subscribes {
+    .btn-danger {
+      margin-bottom: 10px;
+    }
+  }
+
+  .artists {
+    position: relative;
+
+    .updateArtist {
+      width: 40%;
+      display: none;
+      position: absolute;
+      right: 0;
+      label {
+        display: block;
+      }
+      textarea {
+        height: 20vh;
+      }
+      .btn-primary {
+        width: 100%;
+      }
+      img {
+        max-width: 50px;
+        max-height: 50px;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+          -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+          -webkit-transition: 0.5s;
+          -o-transition: 0.5s;
+          transition: 0.5s;
+        }
+      }
+      .imageProps {
+        margin: 3px;
+      }
+      .btn-primary {
+        margin-top: 5px;
+      }
+    }
+
+    .artistsGroup {
+      display: inline-block;
+      margin: 15px;
+      vertical-align: top;
+      h3 {
+        display: inline-block;
+      }
+      .aCard {
+        width: auto;
+        button {
+          background: transparent;
+          border: 0;
+        }
+      }
+    }
+  }
+  .x {
+    background: transparent;
+    border: 0;
+    color: red;
+    &:hover {
+      color: black;
+    }
+  }
+  > .events {
+    .event {
+      max-width: 45%;
+      margin-right: 15px;
+      display: inline-block;
+      width: auto;
+      img {
+        height: 20vh;
+        width: auto;
+      }
+      .btn {
+        width: 100%;
+      }
+      .btn-dark {
+        width: auto;
+      }
+      .allEventImages {
+        height: 50px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  > .carouselSection {
+    .carousel {
+      margin-right: 15px;
+      display: inline-block;
+      width: auto;
+      img {
+        height: 20vh;
+        width: auto;
+        margin: auto;
+      }
+      label {
+        display: block;
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  > .exhibitions {
+    .exhibition {
+      margin-right: 15px;
+      display: inline-block;
+      max-width: 45%;
+      vertical-align: top;
+      img {
+        height: 50px;
+        margin-right: 5px;
+      }
+      label {
+        display: block;
+      }
+      .btn {
+        width: 100%;
+      }
+      .btn-dark {
+        width: auto;
+      }
+      .exhibitionDetails {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+        border: 0.5px solid rgb(192, 192, 192);
+        border-radius: 10px;
+        input,
+        select {
+          margin-bottom: 5px;
+          width: 150px;
+        }
+      }
+      .add {
+        margin-left: 5px;
+        width: 80px;
+        height: 80px;
+      }
+      * {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  > .publications {
+    .publication {
+      margin-right: 30px;
+      display: inline-block;
+      width: auto;
+      img,
+      video {
+        height: 20vh;
+      }
+      label {
+        display: block;
+      }
+      .btn {
+        width: 100%;
+      }
+      .btn-dark {
+        width: auto;
+      }
+      .publicationsImage {
+        height: 50px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  > .info {
+    > div {
+      display: inline-block;
+      width: auto;
+      label {
+        display: block;
+      }
+      .btn {
+        width: 100%;
+      }
+      img {
+        height: 20vh;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .wrapper {
+    .artists {
+      .artistsGroup {
+        width: 100%;
+      }
+      .updateArtist {
+        position: static;
+        width: 100%;
+      }
+    }
+  }
+}

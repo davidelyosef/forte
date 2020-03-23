@@ -1,0 +1,1 @@
+<app-loading-page *ngIf="!carouselPictures"></app-loading-page><div class='container-fluid'> <ngb-carousel class="no-indicators"> <ng-template ngbSlide *ngFor="let picture of carouselPictures"> <img src="{{app}}/assets/carousel/{{picture.imageName}}" [alt]="picture.name"> </ng-template> </ngb-carousel></div>

@@ -1,0 +1,20 @@
+<div class="header"> <a routerLink="/home" class="logo"> <img src="assets/logo/forte-logo.WebP" alt="Forte gallery" />
+    </a>
+    <div class="header-right"> <a routerLink="/artists" routerLinkActive="current-link">Artists</a> <a
+            routerLink="/exhibitions" routerLinkActive="current-link">Exhibitions</a> <a routerLink="/events"
+            routerLinkActive="current-link">Events</a> <a routerLink="/publications"
+            routerLinkActive="current-link">Publications</a> <a routerLink="/info"
+            routerLinkActive="current-link">Info</a> <a *ngIf="isAdmin" class="admin"
+            routerLink="/forte_great_admin_panel1" routerLinkActive="current-link">ADMIN</a> </div>
+    <div id="toggle" (click)="activateMenu()">
+        <div class="span" id="one"></div>
+        <div class="span" id="two"></div>
+        <div class="span" id="three"></div>
+    </div>
+    <div ngClass="menuDropDown shadow-lg p-3 mb-5 bg-white rounded" #menuDropDown> <a routerLink="/artists"
+            routerLinkActive="current-link" (click)="activateMenu()">Artists</a> <a routerLink="/exhibitions"
+            routerLinkActive="current-link" (click)="activateMenu()">Exhibitions</a> <a routerLink="/events"
+            routerLinkActive="current-link" (click)="activateMenu()">Events</a> <a routerLink="/publications"
+            routerLinkActive="current-link" (click)="activateMenu()">Publications</a> <a routerLink="/info"
+            routerLinkActive="current-link" (click)="activateMenu()">Info</a> </div>
+</div>

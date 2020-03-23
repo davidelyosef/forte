@@ -1,0 +1,67 @@
+.info {
+  margin-bottom: -40px;
+}
+.info .details {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+.info .details .galleryDetails {
+  width: 50%;
+}
+.info .details .galleryDetails h6 a {
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+}
+.info .details img {
+  height: 45vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: 95%;
+}
+.info .details iframe {
+  height: 45vh;
+  width: 100%;
+  display: block;
+}
+.info .details .theBtn {
+  margin-top: 5px;
+}
+.info #mapDiv b {
+  cursor: pointer;
+}
+.close:focus {
+  outline-width: 0;
+}
+.alert {
+  text-align: center;
+}
+@media only screen and (max-width: 1125px) {
+  .info .details img {
+    height: 35vh;
+  }
+  .info .details iframe {
+    height: 35vh;
+  }
+}
+@media only screen and (max-width: 964px) {
+  .info .details {
+    display: block;
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+  .info .details img {
+    width: 100%;
+    height: auto;
+  }
+  .info .details iframe {
+    height: 50vh;
+    width: 100%;
+    display: block;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .info .details .galleryDetails {
+    width: 100%;
+  }
+}

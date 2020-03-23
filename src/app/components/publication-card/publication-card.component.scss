@@ -1,0 +1,120 @@
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background-color: #fff;
+}
+.modal .imageNcontent {
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.modal .imageNcontent .modal-image {
+  width: auto;
+  height: auto;
+  max-height: 70vh;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.modal button {
+  background: 0 0;
+  position: absolute;
+  border: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  margin: 20px;
+}
+.modal button i {
+  width: 25px;
+  height: 25px;
+  border: solid #3f3f3f;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.modal button .right {
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.modal button .left {
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.modal button:focus {
+  outline-width: 0;
+}
+.modal .leftButton {
+  left: 0;
+}
+.modal .rightButton {
+  right: 0;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #3f3f3f;
+  font-size: 40px;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.close:focus,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.wrapper {
+  text-align: center;
+}
+.wrapper h4 {
+  display: block;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.wrapper .publicationDetails video {
+  height: auto;
+  width: 100%;
+  max-height: 60vh;
+  margin-bottom: 20px;
+}
+.wrapper .publicationDetails h5 {
+  position: absolute;
+}
+.wrapper .allPictures {
+  display: inline-block;
+}
+.wrapper .allPictures img {
+  display: inline-block;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  height: auto;
+  max-height: 30vh;
+  width: auto;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 905px) {
+  .wrapper .publicationDetails h5 {
+    position: static;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .modal .imageNcontent .modal-image {
+    max-height: 35vh;
+  }
+}
